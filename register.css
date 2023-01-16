@@ -1,0 +1,214 @@
+.section_login {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.section_login .img_login {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  padding: 90px 56px;
+}
+
+.img_login .img_book {
+  position: absolute;
+  background-image: url('/assets/img/mollie-sivaram-_1gBVgy8gIU-unsplash.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(0.6);
+}
+
+.img_login .photo_by {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 25px;
+  font-weight: 700;
+  z-index: 9;
+}
+
+.img_login .title {
+  font-size: 64px;
+  color: #F9F9F9;
+  font-weight: 600;
+  z-index: 9;
+  position: relative;
+}
+
+.section_login .login_content {
+  width: 40%;
+  position: relative;
+  padding: 0 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login_content .bookshelf {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-image: url('/assets/img/bookshelf.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.login_content .title {
+  color: #424242;
+  font-size: 64px;
+  line-height: 83px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.login_content .subtitle {
+  color: #424242;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+.login_content .term {
+  position: absolute;
+  bottom: 47px;
+  left: 80px;
+}
+
+.term .terms_condition {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.term .agreement {
+  color: #D0CCCC;
+}
+
+.term .policy {
+  color: #000000;
+}
+
+.login_content .wrapper_action_login {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 10px 0 0;
+}
+
+.wrapper_action_login .remember_me {
+  appearance: auto;
+}
+
+.wrapper_action_login .forgot {
+  cursor: pointer;
+  color: #424242;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.wrapper_button {
+  margin: 40px 0 0;
+  display: flex;
+  gap: 12px;
+}
+
+.button_signup {
+  width: 110px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #D0CCCC;
+  border: 1px solid #D0CCCC;
+  outline: none;
+}
+
+.button_login {
+  width: 110px;
+  height: 36px;
+  background-color: #000000;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.did-floating-label-content {
+  max-width: 400px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.did-floating-label {
+  color: #D0CCCC;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 14px;
+  padding: 0 5px;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.did-floating-input {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  background: #fff;
+  color: #323840;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.did-floating-input:focus {
+  outline: none;
+}
+
+.did-floating-input:focus ~ .did-floating-label {
+  top: -13px;
+  font-size: 17px;
+}
+
+.did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
+  top: -13px;
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .section_login .img_login {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_login .login_content {
+    width: 60%;
+  }
+
+  .img_login .title {
+    font-size: 50px;
+  }
+}
